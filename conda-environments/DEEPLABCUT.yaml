@@ -25,6 +25,8 @@ channels:
   - defaults
 dependencies:
   - python=3.10
+  - pytorch=2.5.1=cuda126*
+  - torchvision
   - pip
   - ipython
   - jupyter
@@ -33,6 +35,6 @@ dependencies:
   - ffmpeg
   - pytables==3.8.0
   - pip:
-    - torch
-    - torchvision
+#    - torch 
+#    - torchvision
     - deeplabcut[gui,modelzoo,wandb]==3.0.0rc9
